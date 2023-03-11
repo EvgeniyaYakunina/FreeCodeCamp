@@ -1,4 +1,4 @@
-// Write Reusable JavaScript with Functions
+// 1. Write Reusable JavaScript with Functions
 function reusableFunction(){
     console.log("Hi World");
   } 
@@ -6,7 +6,7 @@ function reusableFunction(){
 // **********************************************************************************************
 
 
-  // Passing Values to Functions with Arguments
+  // 2. Passing Values to Functions with Arguments
   function functionWithArgs(a, b){
     console.log(a + b)
   }
@@ -14,7 +14,7 @@ function reusableFunction(){
   // **********************************************************************************************
 
 
-  // Return a Value from a Function with Return
+  //3. Return a Value from a Function with Return
   function timesFive(num) {
     return num * 5;
   }
@@ -22,7 +22,7 @@ function reusableFunction(){
   // **********************************************************************************************
 
 
-  // Global Scope and Functions
+  //4. Global Scope and Functions
 const myGlobal = 10;
 
 function fun1() {
@@ -41,7 +41,7 @@ function fun2() {
 }
 // **********************************************************************************************
 
-// Local Scope and Functions
+//5. Local Scope and Functions
 function myLocalScope() {
   
 const myVar = 3;
@@ -51,3 +51,30 @@ myLocalScope();
 console.log('inside myLocalScope', myVar)
 
 console.log('outside myLocalScope', myVar);
+// **********************************************************************************************
+
+//6. Global vs. Local Scope in Functions
+const outerWear = "T-Shirt";
+
+function myOutfit() {
+const outerWear ="sweater";
+  return outerWear;
+}
+myOutfit();
+// **********************************************************************************************
+
+// 7. Understanding Undefined Value returned from a Function
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+function addFive(){
+  sum = sum + 5;
+}
+
+addThree();
+addFive();
+ // **********************************************************************************************
+ 
