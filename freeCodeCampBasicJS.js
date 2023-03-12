@@ -77,4 +77,30 @@ function addFive(){
 addThree();
 addFive();
  // **********************************************************************************************
- 
+
+// 8. Assignment with a Returned Value
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+
+processed = processArg(7);
+// **********************************************************************************************
+
+// 9. Stand in Line
+function nextInLine(arr, item) {
+  
+  arr.push(item);
+  return arr.shift();
+  
+}
+
+// Setup
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+// **********************************************************************************************
