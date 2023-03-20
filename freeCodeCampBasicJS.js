@@ -464,3 +464,76 @@ return undefined;
 
 abTest(2,2);
 // **********************************************************************************************
+
+// 33. Counting Cards
+let count = 0;
+
+function cc(card) {
+
+switch(card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+
+  var holdbet = 'Hold'
+  if (count > 0) {
+    holdbet = 'Bet'
+  }
+
+  return count + " " + holdbet;
+
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+// **********************************************************************************************
+// 34. Build JavaScript Objects
+const myDog = {
+ 
+"name": "Chappi",
+"legs": 4,
+"tails": 1,
+"friends": ["Oggy", "Penny"]
+};
+// **********************************************************************************************
+
+// 35. Accessing Object Properties with Dot Notation
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+const hatValue = testObj.hat;  
+const shirtValue = testObj.shirt; 
+// **********************************************************************************************
+
+// 36. Accessing Object Properties with Bracket Notation
+const TestObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water"
+};
+const entreeValue = TestObj["an entree"]; 
+const drinkValue = TestObj["the drink"]; 
+// **********************************************************************************************
+
+// 37. Accessing Object Properties with Variables
+const myObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas"
+};
+const playerNumber = 16; 
+const player = myObj[playerNumber]; 
+// **********************************************************************************************
