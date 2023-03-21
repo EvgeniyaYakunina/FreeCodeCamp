@@ -499,7 +499,7 @@ switch(card) {
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 // **********************************************************************************************
 // 34. Build JavaScript Objects
-const myDog = {
+const myDog2 = {
  
 "name": "Chappi",
 "legs": 4,
@@ -537,3 +537,112 @@ const myObj = {
 const playerNumber = 16; 
 const player = myObj[playerNumber]; 
 // **********************************************************************************************
+
+// 38. Updating Object Properties
+const myCat = {
+  "name": "Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myCat.name = "Happy Coder";
+// **********************************************************************************************
+
+// 39. Add New Properties to a JavaScript Object
+const myDog1 = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"]
+};
+
+myDog1.bark = "woof";
+// **********************************************************************************************
+
+// 40. Delete Properties from a JavaScript Object
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
+
+delete myDog.tails;
+// **********************************************************************************************
+
+// 41. Using Objects for Lookups
+function phoneticLookup(val) {
+  let result = "";
+
+  const lookup = {
+   "alpha": "Adams",
+   "bravo": "Boston",
+   "charlie":"Chicago",
+   "delta":"Denver",
+   "echo": "Easy",
+   "foxtrot": "Frank"
+  };
+ result = lookup[val];
+
+  return result;
+}
+
+phoneticLookup("charlie");
+// **********************************************************************************************
+
+// 42. Testing Objects for Properties
+function checkObj(obj, checkProp) {
+ 
+  if(obj.hasOwnProperty(checkProp)){
+    return obj[checkProp];
+  }else{
+  return "Not Found";
+  }
+
+}
+// **********************************************************************************************
+
+// 43. Manipulating Complex Objects
+const myMusic = [
+  {
+    "artist": "Billy Joel",
+    "title": "Piano Man",
+    "release_year": 1973,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ],
+    "gold": true
+  },
+  {
+  "artist": "Sam",
+    "title": "ello",
+    "release_year": 1990,
+    "formats": [
+      "CD",
+      "8T",
+      "LP"
+    ]
+  }
+];
+// **********************************************************************************************
+
+// 44. Accessing Nested Objects
+const myStorage = {
+  "car": {
+    "inside": {
+      "glove box": "maps",
+      "passenger seat": "crumbs"
+     },
+    "outside": {
+      "trunk": "jack"
+    }
+  }
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+// **********************************************************************************************
+
