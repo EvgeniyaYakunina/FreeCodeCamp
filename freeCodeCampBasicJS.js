@@ -723,3 +723,22 @@ if(prop !== "tracks" && value !== ""){
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 // **********************************************************************************************
+
+// 47. Iterate with JavaScript While Loops
+const my1Array = [];
+
+// Only change code below this line
+let i = 5;
+while(i >= 0) {
+  my1Array.push(i);
+  i--;
+}
+// **********************************************************************************************
+
+// 48. Iterate with JavaScript For Loops
+let myArray = [];
+
+for(let i = 1; i < 6; i++){
+  myArray.push(i);
+}
+// **********************************************************************************************
