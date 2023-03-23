@@ -742,3 +742,52 @@ for(let i = 1; i < 6; i++){
   myArray.push(i);
 }
 // **********************************************************************************************
+
+// 49. Iterate Odd Numbers With a For Loop
+const myArray2 = [];
+
+for(let i = 1; i < 10; i += 2){
+  myArray2.push(i);
+}
+// **********************************************************************************************
+
+// 50. Count Backwards With a For Loop
+const myArray3 = [];
+
+for(let i = 9; i > 0; i -=2){
+  myArray3.push(i);
+}
+// **********************************************************************************************
+
+// 51. Iterate Through an Array with a For Loop
+const myArr = [2, 3, 4, 5, 6];
+
+ var total = 0;
+for(let i = 0; i < myArr.length; i++){
+ total += myArr[i];
+}
+// **********************************************************************************************
+
+// 52. Nesting For Loops
+function multiplyAll(arr) {
+  let product = 1;
+  
+for(let i = 0; i < arr.length; i++){
+  for(let j = 0; j < arr[i].length; j++){
+    product *= arr[i][j];
+  }
+}
+  return product;
+}
+
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+// **********************************************************************************************
+// 53. Iterate with JavaScript Do...While Loops
+const myArray4 = [];
+let j = 10;
+
+do{
+  myArray.push(j);
+  j++;
+} while (j < 11); 
+// **********************************************************************************************
