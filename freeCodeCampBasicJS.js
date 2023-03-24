@@ -866,3 +866,59 @@ function randomRange(myMin, myMax) {
 
 }
 // **********************************************************************************************
+ // 59. Use the parseInt Function
+ function convertToInteger(str) {
+  return parseInt(str);
+  }
+  
+  convertToInteger("56");
+  // **********************************************************************************************
+
+  // 60. Use the parseInt Function with a Radix
+  function convertToInteger(str) {
+    return parseInt(str,2)
+    }
+    
+    convertToInteger("10011");
+// **********************************************************************************************
+
+// 61. Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a == b ? "Equal" : "Not Equal";
+  }
+  
+  checkEqual(1, 2);
+// **********************************************************************************************
+
+// 62. Use Multiple Conditional (Ternary) Operators
+function checkSign(num) {
+  return (num > 0) ? "positive"
+    : (num < 0) ? "negative"
+    : "zero";
+  }
+  
+  checkSign(10);
+// **********************************************************************************************
+
+// 63. Use Recursion to Create a Countdown
+function countdown(n){
+  if(n < 1){
+    return [];
+  }else{
+const countArray = countdown(n - 1);
+countArray.unshift(n);
+  return countArray;
+}
+}
+// **********************************************************************************************
+
+// 64. Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+  if(endNum < startNum){
+  return [];
+  }else{
+    const rangeArray = rangeOfNumbers(startNum, endNum - 1);
+    rangeArray.push(endNum);
+    return rangeArray;
+  }
+};
