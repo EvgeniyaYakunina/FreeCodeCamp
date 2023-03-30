@@ -40,3 +40,37 @@ function freezeObj() {
   const PI = freezeObj();
   console.log(PI);
 // ***********************************************************************************************
+
+// 4. Use Arrow Functions to Write Concise Anonymous Functions
+const magic = () => new Date();
+// ***********************************************************************************************
+
+// 5. Write Arrow Functions with Parameters
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+console.log(myConcat([1, 2], [3, 4, 5]));
+// ***********************************************************************************************
+
+// 6. Set Default Parameters for Your Functions
+const increment = (number, value = 1) => number + value;
+// ***********************************************************************************************
+
+// 7. Use the Rest Parameter with Function Parameters
+const sum = (...args) => {
+  
+  let total = 0;
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
+}
+// ***********************************************************************************************
+
+// 8. Use the Spread Operator to Evaluate Arrays In-Place
+const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
+let arr2;
+
+arr2 = [...arr1];
+
+console.log(arr2);
+// ***********************************************************************************************
