@@ -74,3 +74,34 @@ arr2 = [...arr1];
 
 console.log(arr2);
 // ***********************************************************************************************
+
+// 9. Use Destructuring Assignment to Extract Values from Objects
+const High_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+
+const {today, tomorrow} = High_TEMPERATURES;
+// ***********************************************************************************************
+
+// 10. Use Destructuring Assignment to Assign Variables from Objects
+const HIGH_TEMPERATURES = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80
+};
+  
+const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURES;
+// ***********************************************************************************************
+
+// 11. Use Destructuring Assignment to Assign Variables from Nested Objects
+const LOCAL_FORECAST = {
+  yesterday: { low: 61, high: 75 },
+  today: { low: 64, high: 77 },
+  tomorrow: { low: 68, high: 80 }
+};
+
+const {today: {low: lowToday, high: HighToday}} = LOCAL_FORECAST;
+// ***********************************************************************************************
+
