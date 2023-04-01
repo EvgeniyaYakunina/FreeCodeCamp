@@ -137,3 +137,46 @@ const half = ({max, min}) => {
  return (max + min) / 2.0; 
  } 
 // ***********************************************************************************************
+
+// 15. Create Strings using Template Literals
+const result = {
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped: ["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr) {
+  
+  const failureItems = [];
+  for(let i = 0; i < arr.length; i++){
+    failureItems.push(`<li class="text-warning">${result.failure[i]}</li>`);
+  }
+
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+// ***********************************************************************************************
+
+// 16. Write Concise Object Literal Declarations Using Object Property Shorthand
+const createPerson = (name, age, gender) => {
+
+  return ({
+    name, age, gender
+  });
+
+};
+// ***********************************************************************************************
+
+// 17. Write Concise Declarative Functions with ES6
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+
+bicycle.setGear(3);
+console.log(bicycle.gear);
+// ***********************************************************************************************
+
+
