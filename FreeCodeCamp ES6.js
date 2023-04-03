@@ -210,3 +210,29 @@ thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
 console.log(temp);
 // ***********************************************************************************************
+
+// 20. Use export to Share a Code Block
+const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
+
+const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
+export {uppercaseString, lowercaseString};
+// ***********************************************************************************************
+
+// 21. Reuse JavaScript Code Using import
+import {uppercaseString, lowercaseString} from './string_functions.js';
+
+uppercaseString("hello");
+lowercaseString("WORLD!");
+// ***********************************************************************************************
+
+// 22. Use * to Import Everything from a File
+import * as stringFunctions from './string_functions.js'
+
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
+// ***********************************************************************************************
+
