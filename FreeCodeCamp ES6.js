@@ -236,3 +236,20 @@ stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
 // ***********************************************************************************************
 
+// 23. Create an Export Fallback with export default
+export default function subtract(x, y) {
+  return x - y;
+}
+// ***********************************************************************************************
+
+// 24. Import a Default Export
+import subtract from './math_functions.js'
+
+subtract(7,4);
+// ***********************************************************************************************
+
+// 25. Create a JavaScript Promise
+const makeServerRequest = new Promise((resolve, reject) =>{
+
+});
+// ***********************************************************************************************
