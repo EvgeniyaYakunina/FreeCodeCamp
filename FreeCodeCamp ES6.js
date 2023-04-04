@@ -253,3 +253,52 @@ const makeServerRequest = new Promise((resolve, reject) =>{
 
 });
 // ***********************************************************************************************
+
+// 26. Complete a Promise with resolve and reject
+const makeServerRequest1 = new Promise((resolve, reject) => {
+
+  let responseFromServer;
+    
+  if(responseFromServer) {
+   resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+// ***********************************************************************************************
+
+// 27. Handle a Fulfilled Promise with then
+
+const makeServerRequest2 = new Promise((resolve, reject) => {
+
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data").then(result => {
+      console.log(result)
+    });
+  } else {  
+    reject("Data not received");
+  }
+});
+// ***********************************************************************************************
+
+// 28. Handle a Rejected Promise with catch
+const makeServerRequest3 = new Promise((resolve, reject) => {
+  
+  let responseFromServer = false;
+    
+    if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest3.then(result => {
+  console.log(result);
+});
+
+makeServerRequest3.catch(error => {
+  console.log(error);
+});
