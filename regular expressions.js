@@ -33,3 +33,21 @@ let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi; 
 let result5 = twinkleStar.match(starRegex);
 // **********************************************************************************************
+
+// 7. Match Anything with Wildcard Period
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; 
+let result6 = unRegex.test(exampleStr);
+// **********************************************************************************************
+
+// 8. Match Single Character with Multiple Possibilities
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; //
+let result7 = quoteSample.match(vowelRegex);
+// **********************************************************************************************
+
+// 9. Match Letters of the Alphabet
+let quoteSample1 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; 
+let result8 = quoteSample1.match(alphabetRegex);
+// **********************************************************************************************
