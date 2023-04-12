@@ -51,3 +51,21 @@ let quoteSample1 = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/ig; 
 let result8 = quoteSample1.match(alphabetRegex);
 // **********************************************************************************************
+
+// 10. Match Numbers and Letters of the Alphabet
+let quoteSample2 = "Blueberry 3.141592653s are delicious.";
+let myRegex2 = /[h-s2-6]/ig;
+let result9 = quoteSample2.match(myRegex2);
+// **********************************************************************************************
+
+// 11. Match Single Characters Not Specified
+let quoteSample3 = "3 blind mice.";
+let myRegex3 = /[^1-9aeiou]/ig; 
+let result10 = quoteSample3.match(myRegex3); 
+// **********************************************************************************************
+
+// 12. Match Characters that Occur One or More Times
+let difficultSpelling = "Mississippi";
+let myRegex4 = /s+/ig; // Change this line
+let result11 = difficultSpelling.match(myRegex4);
+// **********************************************************************************************
