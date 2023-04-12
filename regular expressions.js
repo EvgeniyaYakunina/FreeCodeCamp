@@ -69,3 +69,14 @@ let difficultSpelling = "Mississippi";
 let myRegex4 = /s+/ig; // Change this line
 let result11 = difficultSpelling.match(myRegex4);
 // **********************************************************************************************
+
+// 13. Match Characters that Occur Zero or More Times
+let chewieRegex = /Aa*/;
+let result12 = chewieQuote.match(chewieRegex);
+// **********************************************************************************************
+
+// 14. Find Characters with Lazy Matching
+let text = "<h1>Winter is coming</h1>";
+let myRegex5 = /<h[a-z]*?1>/; 
+let result13 = text.match(myRegex5);
+// **********************************************************************************************
