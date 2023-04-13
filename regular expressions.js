@@ -96,3 +96,21 @@ let caboose = "The last car on a train is the caboose";
 let lastRegex = /caboose$/;
 let result15 = lastRegex.test(caboose);
 // **********************************************************************************************
+
+// 18. Match All Letters and Numbers
+let quoteSample4 = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; 
+let result16 = quoteSample4.match(alphabetRegexV2).length;
+// **********************************************************************************************
+
+// 19. Match Everything But Letters and Numbers
+let quoteSample5 = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g;
+let result17 = quoteSample5.match(nonAlphabetRegex).length;
+// **********************************************************************************************
+
+// 20. Match All Numbers
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/g;
+let result18 = movieName.match(numRegex).length;
+// **********************************************************************************************
