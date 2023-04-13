@@ -80,3 +80,19 @@ let text = "<h1>Winter is coming</h1>";
 let myRegex5 = /<h[a-z]*?1>/; 
 let result13 = text.match(myRegex5);
 // **********************************************************************************************
+
+// 15. Find One or More Criminals in a Hunt
+let reCriminals = /C+/;
+// **********************************************************************************************
+
+// 16. Match Beginning String Patterns
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; 
+let result14 = calRegex.test(rickyAndCal);
+// **********************************************************************************************
+
+// 17. Match Ending String Patterns
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/;
+let result15 = lastRegex.test(caboose);
+// **********************************************************************************************
