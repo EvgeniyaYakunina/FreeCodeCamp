@@ -114,3 +114,11 @@ let movieName = "2001: A Space Odyssey";
 let numRegex = /\d/g;
 let result18 = movieName.match(numRegex).length;
 // **********************************************************************************************
+
+// 21. Match All Non-Numbers
+let movieName1 = "2001: A Space Odyssey";
+let noNumRegex = /\D/g; 
+let result19 = movieName1.match(noNumRegex).length;
+// **********************************************************************************************
+
+// 22. Restrict Possible Usernames
