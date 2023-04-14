@@ -122,3 +122,7 @@ let result19 = movieName1.match(noNumRegex).length;
 // **********************************************************************************************
 
 // 22. Restrict Possible Usernames
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+$|^[a-z]+\w\d$/i; 
+let result20 = userCheck.test(username);
+// **********************************************************************************************
