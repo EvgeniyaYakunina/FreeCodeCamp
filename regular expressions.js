@@ -126,3 +126,21 @@ let username = "JackOfAllTrades";
 let userCheck = /^[a-z][a-z]+$|^[a-z]+\w\d$/i; 
 let result20 = userCheck.test(username);
 // **********************************************************************************************
+
+// 23. Match Whitespace
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; 
+let result21 = sample.match(countWhiteSpace);
+// **********************************************************************************************
+
+// 24. Match Non-Whitespace Characters
+let sample1 = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; 
+let result22 = sample1.match(countNonWhiteSpace);
+// **********************************************************************************************
+
+// 25. Specify Upper and Lower Number of Matches
+let ohStr = "Ohhh no";
+let ohRegex = /oh{3,6}\sno/i;
+let result23 = ohRegex.test(ohStr);
+// **********************************************************************************************
